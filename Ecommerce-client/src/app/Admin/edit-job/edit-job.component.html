@@ -1,0 +1,68 @@
+
+      
+      <form #jobForm="ngForm" (ngSubmit)="onSubmit(jobForm)">
+        <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="jobsService.NewJob._id">
+            
+        <mat-form-field appearance="fill">
+          <mat-label>Job titile</mat-label>
+          <input matInput type="text"   name="title" #name="ngModel" [(ngModel)]="jobsService.NewJob.title" placeholder="Enter the job title" required>
+        </mat-form-field><br>
+       
+        <mat-form-field appearance="fill">
+          <mat-label>Role</mat-label>
+          <input matInput type="text"  name="role" #name="ngModel" [(ngModel)]="jobsService.NewJob.role" placeholder="Enter the Designation name" required>
+        </mat-form-field><br>
+        
+        <mat-form-field appearance="fill">
+          <mat-label>Company name</mat-label>
+          <input matInput type="text"  name="company" #name="ngModel" [(ngModel)]="jobsService.NewJob.company" placeholder=" Enter the Company name" required>
+        </mat-form-field><br>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Location</mat-label>
+          <input matInput type="text"  name="location" #name="ngModel" [(ngModel)]="jobsService.NewJob.location" placeholder="Enter the Location " required>
+        </mat-form-field><br>
+       
+        <mat-form-field appearance="fill">
+          <mat-label>Salary</mat-label>
+          <input matInput type="text" name="salary" #name="ngModel" [(ngModel)]="jobsService.NewJob.salary" placeholder=" Enter the Salary " required>
+        </mat-form-field><br>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Work Experience</mat-label>
+          <input matInput type="text"  name="experience" #name="ngModel" [(ngModel)]="jobsService.NewJob.experience" placeholder=" Enter the experience in years" required>
+        </mat-form-field><br>
+       
+          <mat-form-field appearance="fill">
+            <mat-label> Schooling details</mat-label>
+            <input matInput type="text" name="noofpos" #name="ngModel" [(ngModel)]="jobsService.NewJob.noofpos" placeholder=" Enter the no of positions available" required>
+          </mat-form-field><br>
+          
+            <mat-form-field appearance="fill">
+              <mat-label> Schooling details</mat-label>
+              <input matInput type="text" name="qualification" #name="ngModel" [(ngModel)]="jobsService.NewJob.qualification" placeholder=" Enter the required qualification" required>
+            </mat-form-field><br>
+            
+    
+              <mat-form-field appearance="fill">
+                <mat-label>Graduation details</mat-label>
+                <input matInput type="text" name="degree" #name="ngModel" [(ngModel)]="jobsService.NewJob.degree" placeholder=" Enter the required degree" required>
+              </mat-form-field><br>
+    
+                <mat-form-field appearance="fill">
+                  <mat-label>Comp info</mat-label>
+                  <input matInput type="text" name="compinfo" #name="ngModel" [(ngModel)]="jobsService.NewJob.compinfo" placeholder=" Enter the information about the company" required>
+                </mat-form-field><br>
+  
+                  <mat-form-field appearance="fill">
+                      <mat-label>Job desc</mat-label>
+                      <input matInput type="text" name="jobdesc" #name="ngModel" [(ngModel)]="jobsService.NewJob.jobdesc" placeholder=" Enter the description of the job" required>
+                    </mat-form-field>
+      
+    
+      <button mat-raised-button color='primary' type="submit" [disabled]="!jobForm.valid">Add</button>
+
+      </form>
+     
+
+ 

@@ -1,0 +1,28 @@
+
+<div class="search"> 
+<mat-form-field appearance="legacy">
+  <mat-label>Search..</mat-label>
+  <input matInput  [(ngModel)]="searchTerm" placeholder="search here..">
+</mat-form-field>
+</div><br>
+
+<mat-grid-list cols="4"  rowHeight="320px" gutterSize="10px">
+    <mat-grid-tile *ngFor="let job of jobsService.ArrayofJob | jobFilter:searchTerm">
+
+        <mat-card class="example-card" >
+            <mat-card-title><p>{{job.title}}</p></mat-card-title>
+            <mat-card-subtitle>{{job.company}}</mat-card-subtitle>
+            <mat-card-content><p>{{job.role}}</p></mat-card-content>
+            <mat-card-actions>
+              <button mat-button color="accent" (click)="viewDesc(job._id)">VIEW</button>
+              <button mat-button  color="primary" (click)="add_save(job)">SAVE</button>
+
+            </mat-card-actions><br>
+          </mat-card>
+
+&nbsp;
+
+    </mat-grid-tile>
+    
+  </mat-grid-list>
+

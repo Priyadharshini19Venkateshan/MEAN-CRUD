@@ -1,0 +1,24 @@
+
+    <mat-card class="example-card">
+        <mat-card-title>{{title}} </mat-card-title><br>
+        <mat-card-content><p><b>ROLE</b> : {{role}} </p></mat-card-content>
+        <mat-card-content><p><b>NAME OF THE COMPANY</b> : {{company}}</p></mat-card-content>
+        <mat-card-content><p><b>LOCATION</b> : {{location}}</p></mat-card-content>
+        <mat-card-content><p><b>SALARY</b> : {{salary}}</p></mat-card-content>
+        <mat-card-content><p><b>WORK EXPERIENCE REQUIRED</b> : {{experience}}</p></mat-card-content>
+
+         <mat-card-content><p><b>NUMBER OF POSITIONS</b> : {{noofpos}}</p></mat-card-content>
+         <mat-card-content><p><b>SCHOOLING</b> : {{qualification}}</p></mat-card-content>
+         <mat-card-content><p><b>GRADUATION</b> : {{degree}}</p></mat-card-content>
+         <mat-card-content><p><b>ABOUT US</b> : {{compinfo}}</p></mat-card-content>
+         <mat-card-content><p><b>DESCRIPTION OF JOB</b> : {{jobdesc}}</p></mat-card-content>
+        
+        
+        <mat-card-actions>
+         
+          <button mat-flat-button color="primary" (click)="applyJob(_id)">APPLY</button> &nbsp; &nbsp;
+          <button mat-flat-button color="primary" (click)="goBack()">BACK</button>
+
+
+        </mat-card-actions><br>
+      </mat-card>

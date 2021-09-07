@@ -1,0 +1,35 @@
+<mat-toolbar color="primary" class="navbar"> 
+    <button mat-button >   
+         <mat-icon> bubble_chart </mat-icon> AON CAREERS 
+        </button>    
+<div>
+  
+<span>
+    <a button mat-button routerLink="/job-list"> Jobs</a>
+</span> 
+<span>
+    <a button mat-button  routerLink="/applied-jobs"> Applied Jobs</a>
+</span> 
+<span>
+    <a button mat-button  routerLink="/saved-jobs"> Saved Jobs</a>
+</span> 
+<span>
+    <a button mat-button routerLink="/user-dash"> ADMIN </a>
+</span> 
+<!--<span>
+    <a button mat-button (click)="displaycompanies()" *ngIf="authService.isLoggedIn()">Companies</a>
+</span>   
+<span><button mat-button (click)="logout()" *ngIf="authService.isLoggedIn()">LogOut</button></span>
+<span>
+    <button mat-button (click)="jobseekerdash()" *ngIf="authService.isLoggedIn()"><mat-icon color='white'>face</mat-icon></button>
+</span>-->
+</div> 
+</mat-toolbar>
+<br>
+
+<a routerLink="add"></a>
+<a routerLink="user-dash"></a>
+
+
+<router-outlet></router-outlet>
+

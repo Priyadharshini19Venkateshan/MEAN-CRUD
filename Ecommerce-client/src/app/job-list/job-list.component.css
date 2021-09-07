@@ -1,0 +1,14 @@
+.example-card {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  mat-grid-tile {
+    background: rgb(208, 218, 221);
+  }  
+
+  .search {
+     width: 100%;
+    min-width: 300px;
+    max-width: 500px; 
+   margin-left: 500px; 
+  }

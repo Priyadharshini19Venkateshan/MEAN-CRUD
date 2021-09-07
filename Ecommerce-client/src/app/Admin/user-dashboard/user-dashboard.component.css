@@ -1,0 +1,14 @@
+table {
+    width: 70%;
+    margin-left: 200px;
+  }
+  
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+
+  .example-button-container {
+    display: flex; 
+    width: 30px;
+    
+  }
